@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Edition should instantiate with the correct values 1`] = `
+Edition {
+  "accountPublicKey": PublicKey {
+    "_bn": "00",
+  },
+  "edition": "00",
+  "key": 1,
+  "parent": PublicKey {
+    "_bn": "00",
+  },
+}
+`;

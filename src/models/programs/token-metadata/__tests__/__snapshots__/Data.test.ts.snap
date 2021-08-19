@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Data should instantiate with the correct values 1`] = `
+Data {
+  "creators": Array [],
+  "name": "Hi",
+  "sellerFeeBasisPoints": 100,
+  "symbol": "DSD",
+  "uri": "wow",
+}
+`;

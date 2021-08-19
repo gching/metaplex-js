@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuctionManagerSettings should instantiate with the correct values 1`] = `
+AuctionManagerSettings {
+  "participationConfig": undefined,
+  "winningConfigs": Array [],
+}
+`;

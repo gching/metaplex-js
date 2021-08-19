@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ParticipationConfig should instantiate with the correct values 1`] = `
+ParticipationConfig {
+  "fixedPrice": undefined,
+  "nonWinningConstraint": 1,
+  "safetyDepositBoxIndex": 5,
+  "winnerConstraint": 0,
+}
+`;

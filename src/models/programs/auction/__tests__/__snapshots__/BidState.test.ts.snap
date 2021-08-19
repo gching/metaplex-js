@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BidState should instantiate with the correct values 1`] = `
+BidState {
+  "bids": Array [
+    Bid {
+      "amount": "00",
+      "key": PublicKey {
+        "_bn": "00",
+      },
+    },
+  ],
+  "max": "00",
+  "type": 0,
+}
+`;

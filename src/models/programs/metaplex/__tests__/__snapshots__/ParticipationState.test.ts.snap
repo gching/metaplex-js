@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ParticipationState should instantiate with the correct values 1`] = `
+ParticipationState {
+  "collectedToAcceptPayment": "00",
+  "primarySaleHappened": 0,
+  "printingAuthorizationTokenAccount": undefined,
+  "validated": 1,
+}
+`;

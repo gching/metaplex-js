@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Vault should instantiate with the correct values 1`] = `
+Vault {
+  "accountPublicKey": PublicKey {
+    "_bn": "00",
+  },
+  "allowFurtherShareCreation": 1,
+  "authority": PublicKey {
+    "_bn": "00",
+  },
+  "fractionMint": PublicKey {
+    "_bn": "00",
+  },
+  "fractionTreasury": PublicKey {
+    "_bn": "00",
+  },
+  "key": 3,
+  "lockedPricePerShare": "00",
+  "pricingLookupAddress": PublicKey {
+    "_bn": "00",
+  },
+  "redeemTreasury": PublicKey {
+    "_bn": "00",
+  },
+  "state": 2,
+  "tokenProgram": PublicKey {
+    "_bn": "00",
+  },
+  "tokenTypeCount": 0,
+}
+`;

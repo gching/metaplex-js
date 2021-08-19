@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Auction should instantiate with the correct values 1`] = `
+Auction {
+  "accountPublicKey": undefined,
+  "auctionGap": undefined,
+  "authority": PublicKey {
+    "_bn": "00",
+  },
+  "bidState": BidState {
+    "bids": Array [],
+    "max": "00",
+    "type": 0,
+  },
+  "endAuctionAt": undefined,
+  "endedAt": undefined,
+  "lastBid": undefined,
+  "priceFloor": PriceFloor {
+    "hash": Uint8Array [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
+    "type": 2,
+  },
+  "state": 0,
+  "tokenMint": PublicKey {
+    "_bn": "00",
+  },
+  "totalUncancelledBids": "00",
+}
+`;

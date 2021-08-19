@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Creator should instantiate with the correct values 1`] = `
+Creator {
+  "address": PublicKey {
+    "_bn": "00",
+  },
+  "share": 50,
+  "verified": 1,
+}
+`;

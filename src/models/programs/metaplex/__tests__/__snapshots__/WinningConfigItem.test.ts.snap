@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WinningConfigItem should instantiate with the correct values 1`] = `
+WinningConfigItem {
+  "amount": 0,
+  "safetyDepositBoxIndex": 0,
+  "winningConfigType": 0,
+}
+`;

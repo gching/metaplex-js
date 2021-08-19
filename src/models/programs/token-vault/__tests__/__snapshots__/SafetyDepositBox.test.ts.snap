@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SafetyDepositBox should instantiate with the correct values 1`] = `
+SafetyDepositBox {
+  "accountPublicKey": PublicKey {
+    "_bn": "00",
+  },
+  "key": 1,
+  "order": 5,
+  "store": PublicKey {
+    "_bn": "00",
+  },
+  "tokenMint": PublicKey {
+    "_bn": "00",
+  },
+  "vault": PublicKey {
+    "_bn": "00",
+  },
+}
+`;

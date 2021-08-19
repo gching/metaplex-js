@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuctionManagerState should instantiate with the correct values 1`] = `
+AuctionManagerState {
+  "participationState": undefined,
+  "status": 4,
+  "winningConfigItemsValidated": 1,
+  "winningConfigStates": Array [],
+}
+`;

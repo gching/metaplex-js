@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WinningConfigState should instantiate with the correct values 1`] = `
+WinningConfigState {
+  "items": Array [],
+  "moneyPushedToAcceptPayment": 0,
+}
+`;

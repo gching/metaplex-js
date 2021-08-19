@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuctionManager should instantiate with the correct values 1`] = `
+AuctionManager {
+  "acceptPayment": PublicKey {
+    "_bn": "00",
+  },
+  "accountPublicKey": PublicKey {
+    "_bn": "00",
+  },
+  "auction": PublicKey {
+    "_bn": "00",
+  },
+  "authority": PublicKey {
+    "_bn": "00",
+  },
+  "key": 7,
+  "settings": AuctionManagerSettings {
+    "participationConfig": undefined,
+    "winningConfigs": Array [],
+  },
+  "state": AuctionManagerState {
+    "participationState": undefined,
+    "status": 4,
+    "winningConfigItemsValidated": 5,
+    "winningConfigStates": Array [],
+  },
+  "store": PublicKey {
+    "_bn": "00",
+  },
+  "vault": PublicKey {
+    "_bn": "00",
+  },
+}
+`;

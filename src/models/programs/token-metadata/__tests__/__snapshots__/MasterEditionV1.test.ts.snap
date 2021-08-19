@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MasterEditionV1 should instantiate with the correct values 1`] = `
+MasterEditionV1 {
+  "accountPublicKey": PublicKey {
+    "_bn": "00",
+  },
+  "key": 2,
+  "maxSupply": undefined,
+  "oneTimePrintingAuthorizationMint": PublicKey {
+    "_bn": "00",
+  },
+  "printingMint": PublicKey {
+    "_bn": "00",
+  },
+  "supply": "00",
+}
+`;

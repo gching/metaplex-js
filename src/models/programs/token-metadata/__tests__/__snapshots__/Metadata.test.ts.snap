@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Metadata should instantiate with the correct values 1`] = `
+Metadata {
+  "accountPublicKey": PublicKey {
+    "_bn": "00",
+  },
+  "data": Data {
+    "creators": Array [],
+    "name": "test",
+    "sellerFeeBasisPoints": 0,
+    "symbol": "test",
+    "uri": "1",
+  },
+  "isMutable": 0,
+  "key": 4,
+  "mint": PublicKey {
+    "_bn": "00",
+  },
+  "primarySaleHappened": 1,
+  "updateAuthority": PublicKey {
+    "_bn": "00",
+  },
+}
+`;

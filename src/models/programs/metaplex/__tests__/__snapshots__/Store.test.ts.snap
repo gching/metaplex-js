@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Store should instantiate with the correct values 1`] = `
+Store {
+  "accountPublicKey": PublicKey {
+    "_bn": "00",
+  },
+  "auctionProgram": PublicKey {
+    "_bn": "00",
+  },
+  "key": 3,
+  "public": 0,
+  "tokenMetadataProgram": PublicKey {
+    "_bn": "00",
+  },
+  "tokenProgram": PublicKey {
+    "_bn": "00",
+  },
+  "tokenVaultProgram": PublicKey {
+    "_bn": "00",
+  },
+}
+`;

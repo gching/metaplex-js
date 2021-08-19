@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WinningConfigStateItem should instantiate with the correct values 1`] = `
+WinningConfigStateItem {
+  "claimed": 0,
+  "primarySaleHappened": 0,
+}
+`;
