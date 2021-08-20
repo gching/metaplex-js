@@ -24,7 +24,7 @@ jobs:
       - name: Install Depedencies
         run: yarn --frozen-lockfile
       - name: Tests
-        run: yarn test
+        run: yarn test --collectCoverage
       - name: Build Docs
         run: yarn build-docs
       - name: Deploy Docs
