@@ -1,0 +1,282 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>metaplex-js</title>
+	<meta name="description" content="Documentation for metaplex-js">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">metaplex-js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>metaplex-js</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#metaplex-js" id="metaplex-js" style="color: inherit; text-decoration: none;">
+					<h1>metaplex-js</h1>
+				</a>
+				<p><code>metaplex-js</code> is a JavaScript API wrapper around <a href="https://www.metaplex.com/">Metaplex</a> and it&#39;s programs on Solana.
+					Through this library, you can interact with Metaplex such as querying for auctions or creating your NFT. This
+				library can be used in Node.js or in the browser.</p>
+				<p>A lot of the implementation is based on the work done at <a href="https://github.com/metaplex-foundation/metaplex">https://github.com/metaplex-foundation/metaplex</a>.</p>
+				<a href="#disclaimer" id="disclaimer" style="color: inherit; text-decoration: none;">
+					<h2>Disclaimer</h2>
+				</a>
+				<p>This is currently a <strong>WIP</strong> and a lot of features are missing or stale in implementation.
+					If you need to a fully featured marketplace and support  all the available features, please refer and
+				use <a href="https://github.com/metaplex-foundation/metaplex">https://github.com/metaplex-foundation/metaplex</a>.</p>
+				<p>At the current moment, only the querying and fetching of specific program accounts, such as an auction or a store. In
+				addition, this library is not published anywhere.</p>
+				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+					<h2>Getting Started</h2>
+				</a>
+				<p>To start using <code>metaplex-js</code>, you will be initializing an instance of <code>MetaplexAPI</code>, which will be the class that you
+				will use to interact with the entirety of Metaplex.</p>
+				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">MetaplexAPI</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;metaplex-js&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #008000">/**</span>
+<span style="color: #008000"> * Pass in the Solana RPC endpoint you would like to use and use the default settings</span>
+<span style="color: #008000"> */</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">metaplex</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">MetaplexAPI</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">endpoint:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;SOLANA_RPC_ENDPOINT&#039;</span>
+<span style="color: #000000">})</span>
+</code></pre>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h2>Documentation</h2>
+				</a>
+				<p>The documentation for this library can be generated by running:</p>
+				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">yarn</span><span style="color: #000000"> </span><span style="color: #001080">build</span><span style="color: #000000">-</span><span style="color: #001080">docs</span>
+</code></pre>
+				<a href="#testing" id="testing" style="color: inherit; text-decoration: none;">
+					<h2>Testing</h2>
+				</a>
+				<p>To run the tests for the <code>metaplex-js</code> library:</p>
+				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">yarn</span><span style="color: #000000"> </span><span style="color: #001080">test</span>
+</code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="enums/AuctionManagerStatus.html" class="tsd-kind-icon">Auction<wbr>Manager<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/AuctionState.html" class="tsd-kind-icon">Auction<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/ChainId.html" class="tsd-kind-icon">Chain<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/MetadataKey.html" class="tsd-kind-icon">Metadata<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/MetaplexKey.html" class="tsd-kind-icon">Metaplex<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/NonWinningConstraint.html" class="tsd-kind-icon">Non<wbr>Winning<wbr>Constraint</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/PriceFloorType.html" class="tsd-kind-icon">Price<wbr>Floor<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/VaultKey.html" class="tsd-kind-icon">Vault<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/VaultState.html" class="tsd-kind-icon">Vault<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/WinningConfigType.html" class="tsd-kind-icon">Winning<wbr>Config<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/WinningConstraint.html" class="tsd-kind-icon">Winning<wbr>Constraint</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Auction.html" class="tsd-kind-icon">Auction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/AuctionClient.html" class="tsd-kind-icon">Auction<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/AuctionManager.html" class="tsd-kind-icon">Auction<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/AuctionManagerClient.html" class="tsd-kind-icon">Auction<wbr>Manager<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/AuctionManagerSettings.html" class="tsd-kind-icon">Auction<wbr>Manager<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/AuctionManagerState.html" class="tsd-kind-icon">Auction<wbr>Manager<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Bid.html" class="tsd-kind-icon">Bid</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/BidderMetadata.html" class="tsd-kind-icon">Bidder<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/BidderPot.html" class="tsd-kind-icon">Bidder<wbr>Pot</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Creator.html" class="tsd-kind-icon">Creator</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Data.html" class="tsd-kind-icon">Data</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Edition.html" class="tsd-kind-icon">Edition</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/MasterEditionV1.html" class="tsd-kind-icon">Master<wbr>Edition<wbr>V1</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/MasterEditionV2.html" class="tsd-kind-icon">Master<wbr>Edition<wbr>V2</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Metadata.html" class="tsd-kind-icon">Metadata</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/MetadataClient.html" class="tsd-kind-icon">Metadata<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/MetaplexAPI.html" class="tsd-kind-icon">MetaplexAPI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/ParticipationConfig.html" class="tsd-kind-icon">Participation<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/ParticipationState.html" class="tsd-kind-icon">Participation<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/PriceFloor.html" class="tsd-kind-icon">Price<wbr>Floor</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/SafetyDepositBox.html" class="tsd-kind-icon">Safety<wbr>Deposit<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/SetStoreArgs.html" class="tsd-kind-icon">Set<wbr>Store<wbr>Args</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/SetWhitelistedCreatorArgs.html" class="tsd-kind-icon">Set<wbr>Whitelisted<wbr>Creator<wbr>Args</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Store.html" class="tsd-kind-icon">Store</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/StoreClient.html" class="tsd-kind-icon">Store<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Vault.html" class="tsd-kind-icon">Vault</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/VaultClient.html" class="tsd-kind-icon">Vault<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/WinningConfig.html" class="tsd-kind-icon">Winning<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/WinningConfigItem.html" class="tsd-kind-icon">Winning<wbr>Config<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/WinningConfigState.html" class="tsd-kind-icon">Winning<wbr>Config<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/WinningConfigStateItem.html" class="tsd-kind-icon">Winning<wbr>Config<wbr>State<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ConstructorOptions.html" class="tsd-kind-icon">Constructor<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ConstructorProgramIds.html" class="tsd-kind-icon">Constructor<wbr>Program<wbr>Ids</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#OnSignTransactions" class="tsd-kind-icon">On<wbr>Sign<wbr>Transactions</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#PublicKeyOrPublicKeyInit" class="tsd-kind-icon">Public<wbr>Key<wbr>OrPublic<wbr>Key<wbr>Init</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
