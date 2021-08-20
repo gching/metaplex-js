@@ -1,4 +1,8 @@
 # metaplex-js
+[![CI](https://github.com/gching/metaplex-js/actions/workflows/publish.yml/badge.svg)](https://github.com/gching/metaplex-js/actions/workflows/publish.yml)
+[![codecov](https://codecov.io/gh/gching/metaplex-js/branch/main/graph/badge.svg?token=KEZA24GI0N)](https://codecov.io/gh/gching/metaplex-js)
+
+[API Documentation](https://gching.github.io/metaplex-js/)
 
 `metaplex-js` is a JavaScript API wrapper around [Metaplex](https://www.metaplex.com/) and it's programs on Solana.
 Through this library, you can interact with Metaplex such as querying for auctions or creating your NFT. This
